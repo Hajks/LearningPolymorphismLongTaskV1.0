@@ -9,5 +9,6 @@ namespace LearningPolymorphismLongTaskV1._0
     interface IHasExteriorDoor
     {
         string DoorDescription { get; }
+        Location DoorLocation { get; set; }
     }
 }

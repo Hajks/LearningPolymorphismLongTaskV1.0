@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace LearningPolymorphismLongTaskV1._0
 {
-    class Room: Location
+    class Room:Location
     {
-        private bool hot;
+        public Room(string name, string decoration):base(name)
+
+        {
+            this.decoration = decoration;
+        }
+        private string decoration { get; }
+
+
     }
 }

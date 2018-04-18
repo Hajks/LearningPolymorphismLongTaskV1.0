@@ -8,6 +8,21 @@ namespace LearningPolymorphismLongTaskV1._0
 {
     class Outside :Location
     {
-        private string decoration { get; }
+        public Outside(string name, bool hot) : base(name)
+        {
+            this.hot = hot;
+        }
+        private bool hot;
+
+        public override string Description
+        {
+            get
+            {
+                if (hot)
+                    return "Tutaj jest bardzo gorąco";
+                else
+                    return "Tutaj jest sporo cienia";
+            }
+        }
     }
 }

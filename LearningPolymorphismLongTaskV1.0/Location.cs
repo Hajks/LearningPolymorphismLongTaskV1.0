@@ -13,7 +13,7 @@ namespace LearningPolymorphismLongTaskV1._0
             Name = name;
         }
         protected string Name { get; private set; }
-        protected Location[] Exits;
+        public Location[] Exits;
         public virtual string Description
         {
             get
