@@ -12,13 +12,13 @@ namespace LearningPolymorphismLongTaskV1._0
         {
             Name = name;
         }
-        protected string Name { get; private set; }
+        public string Name { get; private set; }
         public Location[] Exits;
         public virtual string Description
         {
             get
             {
-                string description = "Stowisz w: " + Name + ". Widzisz wyjścia do następujących lokalizacji: ";
+                string description = "Stowisz w: " + Name + "." +"\r\n" +"Widzisz wyjścia do następujących lokalizacji: ";
                 for (int i = 0; i < Exits.Length; i++)
                 {
                     description += " " + Exits[i].Name;
@@ -26,8 +26,11 @@ namespace LearningPolymorphismLongTaskV1._0
                         description += ",";
                 }
                 description += ".";
-                return description;
-               
+                return description;               
+            }
+            set
+            {
+
             }
         }
     }

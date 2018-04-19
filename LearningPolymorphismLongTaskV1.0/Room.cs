@@ -15,6 +15,13 @@ namespace LearningPolymorphismLongTaskV1._0
         }
         private string decoration { get; }
 
+        public override string Description
+        {
+            get
+            {
+                return base.Description += "\r\nWidzisz tutaj " + decoration + ".";
+            }
+        }
 
     }
 }

@@ -19,9 +19,9 @@ namespace LearningPolymorphismLongTaskV1._0
             get
             {
                 if (hot)
-                    return "Tutaj jest bardzo gorąco";
+                    return base.Description += "\r\n" + "Tutaj jest bardzo gorąco.";
                 else
-                    return "Tutaj jest sporo cienia";
+                    return base.Description += "\r\n" + "Tutaj jest sporo cienia.";
             }
         }
     }
